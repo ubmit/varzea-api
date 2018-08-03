@@ -1,24 +1,23 @@
-# README
+# Instructions
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+First of all you should setup the PostgreSQL database:
 
-Things you may want to cover:
+*Don't forget to start up your PostgreSQL before executing the following commands*
 
-* Ruby version
+```
+rake db:create
+rake db:migrate
+rake db:seed
+```
 
-* System dependencies
+Now you are probably fine to run the Rails server. However, you should run at port 4000!
+Simply because the React's proxy is pointing torwards this port.
 
-* Configuration
+`rails s -p 4000`
 
-* Database creation
+Since I haven't setup something to start up the server and the client concurrently, you will need to start up the client manually,
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+cd client
+yarn start
+```
