@@ -10,14 +10,14 @@ rake db:migrate
 rake db:seed
 ```
 
-Now you are probably fine to run the Rails server. However, you should run at port 4000!
-Simply because the React's proxy is pointing torwards this port.
-
-`rails s -p 4000`
+You should run the Rails server at port 3000, so the standard `rails s` will work.
 
 Since I haven't setup something to start up the server and the client concurrently, you will need to start up the client manually,
 
 ```
 cd client
-yarn start
+
+react-native run-android
+# or
+react-native run-ios
 ```
