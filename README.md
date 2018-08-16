@@ -12,7 +12,7 @@ rake db:seed
 
 You should run the Rails server at port 3000, so the standard `rails s` will work.
 
-Since I haven't setup something to start up the server and the client concurrently, you will need to start up the client manually,
+Since I haven't setup something to start up the server and the client concurrently, you will need to start up the client manually:
 
 ```
 cd client
