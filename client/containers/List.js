@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { View, FlatList, ActivityIndicator } from 'react-native';
 import { ListItem } from 'react-native-elements';
-import IP_ADDRESS from '../keys/ipAddress';
-// you should pass your machine's IP or the request won't work
 import axios from 'axios';
+
+const URL = 'https://rn-rails-prototype.herokuapp.com/api/v1/lists.json';
 
 export default class List extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ export default class List extends Component {
 
   componentDidMount() {
     axios
-      .get(`http://${IP_ADDRESS}:3000/api/v1/lists.json`)
+      .get(URL)
       .then(response => {
         this.setState({
           lists: response.data,
