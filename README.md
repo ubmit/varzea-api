@@ -17,6 +17,9 @@ Since I haven't setup something to start up the server and the client concurrent
 ```
 cd client
 
+# don't forget to install the NPM dependencies
+npm install
+
 react-native run-android
 # or
 react-native run-ios
