@@ -1,12 +1,1 @@
-# Instructions
-
-```
-cd client
-
-# don't forget to install the NPM dependencies
-npm install
-
-react-native run-android
-# or
-react-native run-ios
-```
+This is a pure Rails API to serve a React Native app.
